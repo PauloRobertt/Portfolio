@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <title>Portfólio</title>
 </head>
 <body>
@@ -18,9 +20,20 @@
         </nav>
     </header>
     <main>
-        <section id="sobre" class="sectionAboutMe">
+        <section class="banner .sectionLimitada">
+            <p>
+                Olá, me chamo Paulo Robert!
+            </p>
+            <figure>
+                <img src="img/ilustracao-notebook.webp" alt="ilustracao-notebook">
+            </figure>
+        </section>
+        <section id="sobre" class="sectionAboutMe sectionLimitada">
+            <figure>
+                <img src="img/laptop-com-icone-de-codigo.avif" alt="">
+            </figure>
             <div class="conteudo">
-                <div>
+                <div class="title">
                     <h2>SOBRE</h2>
                     <div class="row"></div>
                 </div>
@@ -29,9 +42,6 @@
                     Sou estudante de Análise e Desenvolvimento de Sistemas, atualmente no 5º período. Desde pequeno, sempre fui fascinado por tecnologia. Agora, com o conhecimento que adquiri e a dedicação constante em aprimorar minhas habilidades, estou pronto para contribuir com projetos inovadores e desafiadores.
                 </p>
             </div>
-            <figure>
-                <img src="" alt="">
-            </figure>
         </section>
         <section id="conhecimento" class="sectionStacks">
            <h2>Minha Stack de tecnologias</h2> 
@@ -50,53 +60,83 @@
             <div class="containerProjetos">
                 <div class="project">
                     <h4>Restaurante</h4>
-                    <p>
-                        O projeto é um site para um restaurante, onde é apresentado um cardápio com todos os pratos. <br>
-                        O objetivo é que os clientes consigam buscar no site qualquer prato servido pelo restaurante através do nome, categoria ou descrição do prato.
-                    </p>
-                    <div class="buttons">
-                        <a href=""><img src="img/icons8-deploy-48.png" alt="Deploy">Deploy</a>
-                        <a href=""><img src="img/icons8-github-50.png" alt="GitHub">Repositório</a>
+                    <div class="Projetoconteudo">
+                        <p>
+                            O projeto é um site para um restaurante, onde é apresentado um cardápio com todos os pratos. <br>
+                            O objetivo é que os clientes consigam buscar no site qualquer prato servido pelo restaurante através do nome, categoria ou descrição do prato.
+                        </p>
+                        <div class="sectionButtons">
+                            <div class="button">
+                                <img src="img/icons8-deploy-48.png" alt="Deploy">
+                                <a href="">Deploy</a>
+                            </div>
+                            <div class="button">
+                                <img src="img/icons8-github-50.png" alt="GitHub">
+                                <a href="">Repositório</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="project">
                     <h4>Agencia de Design</h4>
-                    <p>
-                        Este projeto tem como objetivo desenvolver uma página web moderna e interativa utilizando React JS. <br>
-                        A página contará com uma variedade de componentes que oferecem uma experiência rica ao usuário. <br>
-                        Uma funcionalidade destacada é a capacidade de alterar dinamicamente o tema de todos os componentes através de um botão intuitivo.
-                    </p>
-                    <div class="buttons">
-                        <a href=""><img src="img/icons8-deploy-48.png" alt="Deploy">Deploy</a>
-                        <a href=""><img src="img/icons8-github-50.png" alt="GitHub">Repositório</a>
+                    <div class="Projetoconteudo">
+                        <p>
+                            Este projeto em React JS visa desenvolver uma página web moderna e interativa para a Agência de Design. A página terá diversos componentes, proporcionando uma experiência rica ao usuário, e permitirá alterar dinamicamente o tema dos componentes através de um botão intuitivo.
+                        </p>
+                        <div class="sectionButtons">
+                            <div class="button">
+                                <img src="img/icons8-deploy-48.png" alt="Deploy">
+                                <a href="">Deploy</a>
+                            </div>
+                            <div class="button">
+                                <img src="img/icons8-github-50.png" alt="GitHub">
+                                <a href="">Repositório</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="project">
                     <h4>Controle de Estoque</h4>
-                    <p>
-                        Este projeto consiste em um sistema de controle de estoque para a uma empresa fictícia. <br>
-                        Foi desenvolvido em Java, demonstrando a aplicação de princípios de programação orientada a objetos, como herança, interfaces, polimorfismo, abstração e tratamento de exceções.
-                    </p>
-                    <div class="buttons">
-                        <a href=""><img src="img/icons8-deploy-48.png" alt="Deploy">Deploy</a>
-                        <a href=""><img src="img/icons8-github-50.png" alt="GitHub">Repositório</a>
+                    <div class="Projetoconteudo">
+                        <p>
+                            Este projeto consiste em um sistema de controle de estoque para a uma empresa fictícia. <br>
+                            Foi desenvolvido em Java, demonstrando a aplicação de princípios de programação orientada a objetos, como herança, interfaces, polimorfismo, abstração e tratamento de exceções.
+                        </p>
+                        <div class="sectionButtons">
+                            <div class="button">
+                                <img src="img/icons8-deploy-48.png" alt="Deploy">
+                                <a href="">Deploy</a>
+                            </div>
+                            <div class="button">
+                                <img src="img/icons8-github-50.png" alt="GitHub">
+                                <a href="">Repositório</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="project">
                     <h4>Sorveteria</h4>
-                    <p>
-                        Este é um projeto desenvolvido utilizando a biblioteca React JS, com o objetivo de para apresentar a empresa Gelateria, destacando seus produtos, proporcionando uma experiência completa aos visitantes interessados em conhecer mais sobre a empresa. <br>
-                        O projeto foi desenvolvido com total responsividade, funcionando perfeitamente em dispositivos móveis, tablets e desktops.
-                    </p>
-                    <div class="buttons">
-                        <a href=""><img src="img/icons8-deploy-48.png" alt="Deploy">Deploy</a>
-                        <a href=""><img src="img/icons8-github-50.png" alt="GitHub">Repositório</a>
+                    <div class="Projetoconteudo">
+                        <p>
+                            Este projeto, desenvolvido com a biblioteca React JS, apresenta a empresa Gelateria e seus produtos, proporcionando uma experiência completa aos visitantes. 
+                            O site é totalmente responsivo, funcionando perfeitamente em dispositivos móveis, tablets e desktops.
+                        </p>
+                        <div class="sectionButtons">
+                            <div class="button">
+                                <img src="img/icons8-deploy-48.png" alt="Deploy">
+                                <a href="">Deploy</a>
+                            </div>
+                            <div class="button">
+                                <img src="img/icons8-github-50.png" alt="GitHub">
+                                <a href="">Repositório</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="projectDesenvolvimento">
+                <div class="project">
                     <h4>Em Desenvolvimento</h4>
                 </div>
-                <div class="projectDesenvolvimento">
+                <div class="project">
                     <h4>Em Desenvolvimento</h4>
                 </div>
             </div>

@@ -14,6 +14,7 @@ header{
     width: 100%;
     height: 50px;
     padding: 0 30px;
+    border-bottom: 1px solid #ffff;
 }
 
 header span{
@@ -26,6 +27,14 @@ header .links a{
     color: #ffff;
 }
 
+main, footer{
+    background-color: #1e242b;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
 .sectionLimitada{
     width: 70%;
     display: flex;
@@ -33,17 +42,148 @@ header .links a{
     align-items: center;
 }
 
-.sectionAboutMe{
-    background-color: #1e242b;
-    color: #ffff;
-    display: flex;
+
+.banner{
+    margin-top: 50px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.conteudo{
-    
+.banner p{
+    font-size: 42px;
+    width: 300px;
+}
+
+.banner figure img{
+    width: 500px;
+    height: 300px;
+}
+
+.sectionAboutMe{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.sectionAboutMe figure img{
+    width: 300px;
+    height: 200px;
+}
+
+.sectionAboutMe .conteudo{
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .row{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
 
+.sectionStacks, .sectionContato{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionProjetos{
+    gap: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionProjetos .containerProjetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: red;
+    gap: 10px;
+    width: 100%;
+}
+
+.containerProjetos .project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    position: relative;
+}
+
+.containerProjetos .project:hover{
+    
+}
+
+.Projetoconteudo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color:yellow;
+}
+
+.Projetoconteudo p{
+    padding: 8px;
+    height: 100%;
+}
+
+.Projetoconteudo .sectionButtons{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.sectionButtons .button img{
+    width: 50px;
+    height: 50px;
+}
+
+.sectionButtons .button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionButtons .button a{
+    color: white;
+    text-decoration: none;
+}
+
+.sectionContato{
+    gap: 20px;
+}
+
+.sectionContato nav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer{
+    border-top: 1px solid #ffff;
+    text-align: center;
+    padding: 10px;
 }
