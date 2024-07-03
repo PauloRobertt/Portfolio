@@ -188,14 +188,22 @@ main, footer{
 }
 
 .sectionContato{
-    gap: 20px;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.sectionContato nav{
+    display: flex;
+    gap: 50px;
 }
 
 .sectionContato nav a{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     gap: 10px;
+    color: white;
+    text-decoration: none;
 }
 
 footer{
