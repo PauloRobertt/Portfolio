@@ -44,7 +44,6 @@ main, footer{
     align-items: center;
 }
 
-
 .banner{
     margin-top: 50px;
     display: flex;
@@ -64,13 +63,13 @@ main, footer{
 
 .sectionAboutMe{
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .sectionAboutMe figure img{
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 300px;
 }
 
 .sectionAboutMe .conteudo{
@@ -82,15 +81,25 @@ main, footer{
 }
 
 .title{
+    width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 5px;
 }
 
+.title h2{
+    text-align: center;
+}
+
 .row{
-    width: 100%;
+    width:75%;
     height: 2px;
     background-color: white;
+}
+
+.sectionAboutMe .title .row{
+    width:100%;
 }
 
 .sectionStacks, .sectionContato{
@@ -98,6 +107,43 @@ main, footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.stacks img{
+    width: 40px;
+    height: 40px;
+}
+
+.skill figure .stack{
+    margin-bottom: 10px;
+}
+
+.skill ul li{
+    margin-bottom: 50px;
+}
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.conhecimento{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.stack{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.skill, .stacks{
+    display: flex;
+    flex-direction: column;
 }
 
 .sectionProjetos{
