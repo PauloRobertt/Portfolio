@@ -1,8 +1,20 @@
+/*Classes para organização de estrutura*/
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.centralizado, .sectionLimitada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionLimitada{
+    width: 92%;
 }
 
 /*Estilização do Header*/
@@ -59,24 +71,16 @@ header .links a:hover::after{
     }
 }
 
-/*Estilização Main*/
+/*Estilização Main e Footer*/
 
 main, footer{
     background-color: #1e242b;
     color: #ffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; 
     gap: 50px;
 }
 
-.sectionLimitada{
-    width: 92%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/*Estilização da section Banner*/
 
 .banner{
     margin-top: 50px;
@@ -94,6 +98,8 @@ main, footer{
     width: 500px;
     height: 300px;
 }
+
+/*Estilização da section sobre*/
 
 .sectionAboutMe{
     display: flex;
@@ -116,9 +122,6 @@ main, footer{
 
 .title{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 5px;
 }
 
@@ -136,11 +139,10 @@ main, footer{
     width:100%;
 }
 
+/*Estilização da seção de conhecimento*/
+
 .sectionStacks, .sectionContato{
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .stacks img{
@@ -184,25 +186,16 @@ main, footer{
 
 .sectionProjetos{
     gap: 30px;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .sectionProjetos .containerProjetos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     gap: 10px;
     width: 100%;
 }
 
 .containerProjetos .project{ 
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 400px;
     height: 200px;
     position: relative;
@@ -223,9 +216,6 @@ main, footer{
     position: absolute;
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .Projetoconteudo{
@@ -258,15 +248,44 @@ main, footer{
 }
 
 .sectionButtons .button{
-    display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .sectionButtons .button a{
     color: white;
     text-decoration: none;
 }
+
+/*Estilização de cada projeto*/
+
+.project:nth-child(1) .ProjetoTittle {
+    background-image: url(img/imgProjetos/bannerRestaurante.png);
+    background-size: cover;
+}
+  
+.project:nth-child(2) .ProjetoTittle {
+    background-image: url(img/imgProjetos/bannerAgencia.png);
+    background-color: orange;
+    background-size: cover;
+}
+  
+.project:nth-child(3) .ProjetoTittle {
+    background-image: url(img/imgProjetos/controle-estoque.png);
+    background-size: cover;
+}
+
+.project:nth-child(4) .ProjetoTittle {
+    background-image: url(img/imgProjetos/banner-Sorveteria.png);
+    background-size: cover;
+    background-position: center;
+    background-color: #fcdc7c;
+}
+
+.project:nth-child(5) , .project:nth-child(6){
+    background-image: url(img/imgProjetos/FundoDesenvolvimento.jpg);
+    background-size: cover;
+}
+
 
 /*Estilização da seção Contato*/
 
@@ -298,34 +317,4 @@ footer{
     border-top: 1px solid #ffff;
     text-align: center;
     padding: 10px;
-}
-
-/*Estilização de cada projeto*/
-
-.project:nth-child(1) .ProjetoTittle {
-    background-image: url(img/imgProjetos/bannerRestaurante.png);
-    background-size: cover;
-}
-  
-.project:nth-child(2) .ProjetoTittle {
-    background-image: url(img/imgProjetos/bannerAgencia.png);
-    background-color: orange;
-    background-size: cover;
-}
-  
-.project:nth-child(3) .ProjetoTittle {
-    background-image: url(img/imgProjetos/controle-estoque.png);
-    background-size: cover;
-}
-
-.project:nth-child(4) .ProjetoTittle {
-    background-image: url(img/imgProjetos/banner-Sorveteria.png);
-    background-size: cover;
-    background-position: center;
-    background-color: #fcdc7c;
-}
-
-.project:nth-child(5) , .project:nth-child(6){
-    background-image: url(img/imgProjetos/FundoDesenvolvimento.jpg);
-    background-size: cover;
 }
