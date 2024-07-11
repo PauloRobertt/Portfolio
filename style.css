@@ -180,6 +180,8 @@ main, footer{
     flex-direction: column;
 }
 
+/*Estilização da Seção Projetos*/
+
 .sectionProjetos{
     gap: 30px;
     display: flex;
@@ -209,6 +211,7 @@ main, footer{
 .Projetoconteudo:hover{
     z-index: 4;
     background-color: rgb(0, 0, 0, 0.8);
+    transition: background-color 700ms;
 }
 
 .ProjetoTittle:hover{
@@ -265,6 +268,8 @@ main, footer{
     text-decoration: none;
 }
 
+/*Estilização da seção Contato*/
+
 .sectionContato{
     gap: 50px;
     margin-bottom: 40px;
@@ -275,7 +280,12 @@ main, footer{
     gap: 50px;
 }
 
-.sectionContato nav a{
+.sectionContato img{
+    width: 50px;
+    height: 50px;
+}
+
+.sectionContato nav a, .sectionContato .wht{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -289,6 +299,8 @@ footer{
     text-align: center;
     padding: 10px;
 }
+
+/*Estilização de cada projeto*/
 
 .project:nth-child(1) .ProjetoTittle {
     background-image: url(img/imgProjetos/bannerRestaurante.png);
