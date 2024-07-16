@@ -106,8 +106,9 @@ main, footer{
 }
 
 .banner figure img{
-    width: 500px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
 }
 
 /*Animação p Banner*/
@@ -140,6 +141,7 @@ main, footer{
     display: flex;
     flex-direction: column;
     gap: 15px;
+    font-size: 18px;
 }
 
 .title{
