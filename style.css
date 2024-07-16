@@ -91,12 +91,35 @@ main, footer{
 
 .banner p{
     font-size: 42px;
-    width: 300px;
+    width: 14ch;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #ffff ;
+}
+
+.banner p span{
+    color: blueviolet;
+}
+
+.banner p:nth-child(1){
+    animation: AnimaDigitar 6s infinite ;
 }
 
 .banner figure img{
-    width: 500px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+/*Animação p Banner*/
+
+@keyframes AnimaDigitar {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
 }
 
 /*Estilização da section sobre*/
@@ -118,6 +141,7 @@ main, footer{
     display: flex;
     flex-direction: column;
     gap: 15px;
+    font-size: 18px;
 }
 
 .title{
