@@ -17,6 +17,16 @@
     width: 92%;
 }
 
+/*Animações Globais*/
+
+.hidden{
+    opacity: 0;
+}
+
+.show{
+    opacity: 1;
+}
+
 /*Estilização do Header*/
 
 header{
