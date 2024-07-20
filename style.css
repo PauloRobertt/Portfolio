@@ -384,3 +384,66 @@ footer{
     text-align: center;
     padding: 10px;
 }
+
+/*Responsividade para telas com no maximo 768px*/
+@media screen and (max-width:768px) {
+    header{
+        flex-direction: column;
+        height: 70px;
+    }
+
+    header span{
+        font-size: 30px;
+    }
+
+    header nav a{
+        font-size: 20px;
+    }
+
+    .banner figure{
+        display: none;
+    }
+
+    .sectionAboutMe{
+        flex-direction: column;
+        gap: 50px;
+        margin-bottom: 60px;
+    }
+
+    .sectionStacks .conhecimento{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .containerProjetos{
+        flex-direction: column;
+    }
+
+    .sectionProjetos .project{
+        width: 80%;
+        height: 300px;
+    }
+
+    .sectionProjetos .project .Projetoconteudo{
+        font-size:20px;
+    }
+
+    .ProjetoTittle{
+        font-size: 28px;
+    }
+
+    .project:nth-child(5) , .project:nth-child(6){
+        display: none;
+    }
+
+}
+
+/*Responsividade para telas de 769px até 1023px*/
+@media screen and (min-width:769px) and (max-width:1023px){
+    
+}
+
+/*Responsividade para telas de no minimo 1024px*/
+@media screen and (min-width:1024px){
+
+}
