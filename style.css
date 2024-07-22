@@ -53,6 +53,9 @@ header span{
 
 header .links{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 header .links a{
@@ -385,8 +388,62 @@ footer{
     padding: 10px;
 }
 
+/*Responsividade para telas com no maximo 426px*/
+@media screen and (min-width:376px) and (max-width:425px) {  
+    header{
+        flex-direction: column;
+        height: 90px;
+        flex-wrap: nowrap;
+    }
+
+    header .links {
+        gap: 10px;
+    }
+
+    .banner figure{
+        display: none;
+    }
+
+    .banner p{
+        font-size: 30px;
+    }
+
+    .sectionAboutMe{
+        flex-direction: column;
+        gap: 50px;
+        margin-bottom: 60px;
+    }
+
+    .sectionStacks .conhecimento{
+        width: 100%;
+        gap: 50px;
+        justify-content: space-evenly;
+    }
+
+    .containerProjetos{
+        flex-direction: column;
+    }
+
+    .ProjetoTittle{
+        font-size: 20px;
+    }
+
+    .project:nth-child(5) , .project:nth-child(6){
+        display: none;
+    }
+
+    .wht p{
+        font-size: 17px;
+        text-align: center;
+    }
+
+    footer{
+        font-size: 20px;
+    }
+}
+
 /*Responsividade para telas com no maximo 768px*/
-@media screen and (max-width:768px) {
+@media screen and (min-width:426px) and (max-width:768px) {
     header{
         flex-direction: column;
         height: 70px;
