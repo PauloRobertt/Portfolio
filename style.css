@@ -388,7 +388,105 @@ footer{
     padding: 10px;
 }
 
-/*Responsividade para telas com no maximo 426px*/
+/*Responsividade para telas com no maximo 375px CELULAR PEQUENO*/
+@media screen and (max-width:375px){
+    header{
+        flex-direction: column;
+        height: auto;
+    }
+
+    header span{
+        font-size: 36px;
+    }
+
+    header .links{
+        gap: 10px;
+    }
+
+    header .links a{
+        width: auto;
+        font-size: 22px;
+    }
+
+    .banner figure{
+        display: none;
+    }
+
+    .banner p{
+        font-size: 22px;
+    }
+
+    .sectionAboutMe{
+        flex-direction: column;
+        gap: 50px;
+        margin-bottom: 100px;
+    }
+
+    .sectionAboutMe figure img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .sectionAboutMe .conteudo{
+        width: 100%;
+    }
+
+    .sectionStacks .conhecimento{
+        width: 100%;
+        gap: 50px;
+        justify-content: space-evenly;
+    }
+
+    .containerProjetos{
+        flex-direction: column;
+    }
+
+    .ProjetoTittle{
+        font-size: 18px;
+    }
+
+    .containerProjetos .project{
+        width: 100%;
+        height: 250px;
+    }
+
+    .Projetoconteudo{
+        font-size: 15px;
+    }
+
+    .project:nth-child(5) , .project:nth-child(6){
+        display: none;
+    }
+
+    .sectionContato{
+        width: 90%;
+    }
+
+    .sectionContato nav{
+        width: 100%;
+        gap: 20px;
+    }
+
+    .sectionContato nav a{
+        width:auto;
+        height: 100px;
+    }
+
+    .wht{
+        width: 60px;
+    }
+
+    .wht p{
+        font-size: 17px;
+        text-align: center;
+    }
+
+    footer{
+        font-size: 20px;
+    }
+}
+
+/*Responsividade para telas com no maximo 426px CELULAR MEDIO*/
 @media screen and (min-width:376px) and (max-width:425px) {  
     header{
         flex-direction: column;
@@ -442,7 +540,7 @@ footer{
     }
 }
 
-/*Responsividade para telas com no maximo 768px*/
+/*Responsividade para telas com no maximo 768px TABLET*/
 @media screen and (min-width:426px) and (max-width:768px) {
     header{
         flex-direction: column;
