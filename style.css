@@ -618,7 +618,99 @@ footer{
     }
 }
 
-/*Responsividade para telas de no minimo 1024px*/
-@media screen and (min-width:1025px) and (max-width:1439px){
+/*Responsividade para telas de no minimo 1440px*/
+@media screen and (min-width:1440px){
+    header{
+        height: 70px;
+    }
+
+    header nav a{
+        font-size: 23px;
+    }
+
+    header span{
+        font-size: 36px;
+    }
+
+    .title{
+        font-size: 26px;
+    }
+
+    .banner figure img{
+        width:80%;
+    }
+
+    .sectionAboutMe figure img{
+        width: 35vw;
+        height: auto;
+    }
+
+    .sectionAboutMe .conteudo{
+        font-size: 26px;
+        width:60vh;
+        height: auto;
+    }
+
+    .sectionStacks .conhecimento{
+        width: 60%;
+    }
+
+    .sectionStacks h3{
+        font-size: 30px;
+    }
+
+    .sectionStacks .conhecimento .stacks p, .sectionStacks .conhecimento li{
+        font-size: 26px;
+    }
+
+    .sectionStacks .conhecimento img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .sectionProjetos .project{
+        flex-grow: 1;
+        flex-basis: 600px;
+        height: 300px;
+    }
+
+    .sectionProjetos .project .ProjetoTittle{
+        font-size: 30px;
+    }
+
+    .sectionProjetos .project .Projetoconteudo{
+        font-size: 26px;
+    }
+
+    .sectionProjetos .sectionButtons img{
+        width: 75px;
+        height: 70px;
+    }
+
+    .project:nth-child(5) , .project:nth-child(6){
+        font-size: 30px;
+    }
+
+    .sectionContato nav{
+        width:70%;
+        height: auto;
+        justify-content: space-between;
+        font-size: 30px;
+    }
+
+    .sectionContato nav a{
+        width: 150px;
+        height: auto;
+    }
+
+    .sectionContato nav img{
+        width: 70px;
+        height: 80px;
+    }
+
+    footer{
+        font-size: 36px;
+        padding: 20px;
+    }
 
 }
