@@ -7,6 +7,10 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .centralizado, .sectionLimitada{
     display: flex;
     justify-content: center;
@@ -42,7 +46,7 @@ header{
     background-color: #1e242b;
     color: #ffff;
     width: 100%;
-    height: 50px;
+    height: 8vh;
     padding: 0 30px;
     border-bottom: 1px solid #ffff;
 }
@@ -53,9 +57,10 @@ header span{
 
 header .links{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    list-style: none;
 }
 
 header .links a{
@@ -77,6 +82,18 @@ header .links a:hover::after{
     animation-name: AnimHeader;
     animation-duration: 500ms;
     width: 100%;
+}
+
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background-color: #ffff;
+    margin: 8px;
 }
 
 /*Animação Header*/
@@ -388,13 +405,30 @@ footer{
     padding: 10px;
 }
 
-/*Responsividade para telas com no maximo 375px CELULAR PEQUENO*/
-@media screen and (max-width:375px){
-    header{
-        flex-direction: column;
-        height: auto;
+/* Responsividade do menu */
+@media screen and (max-width: 768px) {
+    .mobile-menu {
+        display: block;
     }
 
+    .links {
+        position: absolute;
+        z-index: 1;
+        top: 8vh;
+        right: 0;
+        width: 45vw;
+        height: 92vh;
+        background-color: red;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+    }
+
+}
+
+
+/*Responsividade para telas com no maximo 375px CELULAR PEQUENO*/
+@media screen and (max-width:375px){
     header span{
         font-size: 36px;
     }
@@ -489,8 +523,6 @@ footer{
 /*Responsividade para telas com no maximo 426px CELULAR MEDIO*/
 @media screen and (min-width:376px) and (max-width:425px) {  
     header{
-        flex-direction: column;
-        height: auto;
         flex-wrap: nowrap;
         gap: 10px;
     }
@@ -558,21 +590,11 @@ footer{
 
 /*Responsividade para telas com no maximo 768px TABLET*/
 @media screen and (min-width:426px) and (max-width:768px) {
-    header{
-        flex-direction: column;
-        height: auto;
-        gap: 10px;
-    }
-
-    header .links{
-        gap: 10px;
-    }
-
     header span{
         font-size: 30px;
     }
 
-    header nav a{
+    header nav .links{
         font-size: 20px;
     }
 
@@ -688,10 +710,6 @@ footer{
 
 /*Responsividade para telas de no minimo 1440px*/
 @media screen and (min-width:1440px){
-    header{
-        height: auto;
-    }
-
     header nav a{
         font-size: 23px;
     }
