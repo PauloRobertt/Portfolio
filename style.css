@@ -7,6 +7,10 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .centralizado, .sectionLimitada{
     display: flex;
     justify-content: center;
@@ -42,7 +46,7 @@ header{
     background-color: #1e242b;
     color: #ffff;
     width: 100%;
-    height: 50px;
+    height: 8vh;
     padding: 0 30px;
     border-bottom: 1px solid #ffff;
 }
@@ -53,9 +57,10 @@ header span{
 
 header .links{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    list-style: none;
 }
 
 header .links a{
@@ -77,6 +82,18 @@ header .links a:hover::after{
     animation-name: AnimHeader;
     animation-duration: 500ms;
     width: 100%;
+}
+
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background-color: #ffff;
+    margin: 8px;
 }
 
 /*Animação Header*/
@@ -388,19 +405,42 @@ footer{
     padding: 10px;
 }
 
-/*Responsividade para telas com no maximo 375px CELULAR PEQUENO*/
-@media screen and (max-width:375px){
-    header{
-        flex-direction: column;
-        height: auto;
+/* Responsividade do menu */
+@media screen and (max-width: 768px) {
+    .mobile-menu {
+        display: block;
     }
 
+    .links {
+        position: absolute;
+        z-index: 1;
+        top: 8vh;
+        right: 0;
+        width: 30vw;
+        height: 92vh;
+        background-color: #1e242b;
+        border: 1px solid white;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+    }
+
+    .links.active{
+        transform: translateX(0);
+    }
+
+}
+
+
+/*Responsividade para telas com no maximo 375px CELULAR PEQUENO*/
+@media screen and (max-width:375px){
     header span{
         font-size: 36px;
     }
 
     header .links{
         gap: 10px;
+        width: 100vw;
     }
 
     header .links a{
@@ -489,13 +529,13 @@ footer{
 /*Responsividade para telas com no maximo 426px CELULAR MEDIO*/
 @media screen and (min-width:376px) and (max-width:425px) {  
     header{
-        flex-direction: column;
-        height: 90px;
         flex-wrap: nowrap;
+        gap: 10px;
     }
 
     header .links {
         gap: 10px;
+        width: 50vw;
     }
 
     .banner figure{
@@ -503,13 +543,23 @@ footer{
     }
 
     .banner p{
-        font-size: 30px;
+        font-size: 1.5em;
+        width: auto;
     }
 
     .sectionAboutMe{
         flex-direction: column;
         gap: 50px;
-        margin-bottom: 60px;
+        margin-bottom: 20px;
+    }
+
+    .sectionAboutMe .conteudo{
+        width: 100%;
+        height: auto;
+    }
+
+    .sectionAboutMe figure img{
+        width: 100%;
     }
 
     .sectionStacks .conhecimento{
@@ -520,6 +570,11 @@ footer{
 
     .containerProjetos{
         flex-direction: column;
+    }
+
+    .containerProjetos .project{
+        width: 100%;
+        font-size: 14px;
     }
 
     .ProjetoTittle{
@@ -542,16 +597,11 @@ footer{
 
 /*Responsividade para telas com no maximo 768px TABLET*/
 @media screen and (min-width:426px) and (max-width:768px) {
-    header{
-        flex-direction: column;
-        height: 70px;
-    }
-
     header span{
         font-size: 30px;
     }
 
-    header nav a{
+    header nav .links{
         font-size: 20px;
     }
 
@@ -559,11 +609,19 @@ footer{
         display: none;
     }
 
+    .banner p{
+        font-size: 30px;
+    }
+
     .sectionAboutMe{
         flex-direction: column;
         align-items: center;
         gap: 50px;
         margin-bottom: 60px;
+    }
+
+    .sectionAboutMe figure img{
+        width: 100%;
     }
 
     .sectionStacks .conhecimento{
@@ -576,7 +634,7 @@ footer{
     }
 
     .sectionProjetos .project{
-        width: 80%;
+        width: 100%;
         height: 300px;
     }
 
@@ -596,8 +654,46 @@ footer{
 
 /*Responsividade para telas de 769px até 1024px DESKTOP*/
 @media screen and (min-width:769px) and (max-width:1024px){
+    .banner{
+        justify-content: space-between;
+    }
+
+    .banner figure img{
+        width: 100%;
+        height: auto;
+    }
+
+    .banner figure{
+        width: 50%;
+    }
+
+    .banner p{
+        width: 50%;
+        font-size: 1.7rem;
+    }
+
+    .sectionAboutMe{
+        height: auto;
+        gap: 20px;
+    }
+
     .sectionAboutMe .conteudo p{
         font-size: 20px;
+    }
+
+    .sectionAboutMe .conteudo{
+        width: 50%;
+        height: auto;
+    }
+
+    .sectionAboutMe figure img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .sectionAboutMe figure{
+        width: 50%;
+        height: auto;
     }
 
     .sectionStacks .conhecimento .skill{
@@ -621,10 +717,6 @@ footer{
 
 /*Responsividade para telas de no minimo 1440px*/
 @media screen and (min-width:1440px){
-    header{
-        height: 70px;
-    }
-
     header nav a{
         font-size: 23px;
     }
