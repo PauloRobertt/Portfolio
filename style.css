@@ -416,12 +416,17 @@ footer{
         z-index: 1;
         top: 8vh;
         right: 0;
-        width: 45vw;
+        width: 30vw;
         height: 92vh;
-        background-color: red;
+        background-color: #1e242b;
+        border: 1px solid white;
         flex-direction: column;
         transform: translateX(100%);
         transition: transform 0.3s ease;
+    }
+
+    .links.active{
+        transform: translateX(0);
     }
 
 }
@@ -435,6 +440,7 @@ footer{
 
     header .links{
         gap: 10px;
+        width: 100vw;
     }
 
     header .links a{
@@ -529,6 +535,7 @@ footer{
 
     header .links {
         gap: 10px;
+        width: 50vw;
     }
 
     .banner figure{
