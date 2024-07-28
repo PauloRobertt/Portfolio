@@ -7,10 +7,6 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-body{
-    overflow-x: hidden;
-}
-
 .centralizado, .sectionLimitada{
     display: flex;
     justify-content: center;
@@ -55,7 +51,7 @@ header span{
     font-size: 25px;
 }
 
-header .links{
+.links{
     display: flex;
     justify-content: space-around;
     align-items: center;

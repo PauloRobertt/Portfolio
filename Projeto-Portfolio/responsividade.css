@@ -6,6 +6,7 @@
 
     .links {
         position: absolute;
+        display: none;
         z-index: 1;
         top: 8vh;
         right: 0;
@@ -15,11 +16,21 @@
         border: 1px solid white;
         flex-direction: column;
         transform: translateX(100%);
-        transition: transform 0.3s ease;
+        animation: linkAnim 500ms;
     }
 
     .links.active{
-        transform: translateX(0);
+        display: flex;
+        transform: translateX(0%);
+    }
+    
+    @keyframes linkAnim {
+        to{
+            transform: translateX(0%);
+        }
+        from{
+            transform: translate(100%);
+        }
     }
 
 }
