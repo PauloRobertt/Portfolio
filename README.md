@@ -1,4 +1,4 @@
- # 🍴 PORTFOLIO PESSOA
+ # PORTFOLIO PESSOA
 Portfolio pessoal
 
  ## 🔨 Tecnologias Utilizadas
