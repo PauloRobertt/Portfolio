@@ -1,7 +1,7 @@
 .aboutMe {
     display: flex;
     gap: 2em;
-    padding: var(--paddingSections);
+    padding: 11vh 3em;
     color: var(--textColor);
     max-height: 472px;
     background-color: var(--primaryColor);
