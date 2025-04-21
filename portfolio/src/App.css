@@ -3,11 +3,15 @@
     --secondaryColor: #0F2443;
     --textColor: #CCD6F6;
     --detailsColor: #64FFDA;
+    --paddingSections: 2em 3em;
+    --sizeTittle: 2.5em;
+    --sizeSubTittle: 2em;
+    --sizeParagrafo: 20px;
 }
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
 }

@@ -1,0 +1,48 @@
+.aboutMe {
+    display: flex;
+    gap: 2em;
+    padding: var(--paddingSections);
+    color: var(--textColor);
+    max-height: 472px;
+    background-color: var(--primaryColor);
+}
+
+.textAboutme {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.textAboutme h2 {
+    font-size: var(--sizeSubTittle);
+}
+
+.textAboutme p {
+    width: 80%;
+    font-size: var(--sizeParagrafo);
+}
+
+.imgAboutme {
+    width: 50%;
+}
+
+.buttonCurriculo{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: .5em;
+    width: 220px;
+    padding: 5px;
+    font-size: 20px;
+    color: var(--textColor);
+    background-color: var(--secondaryColor);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.buttonCurriculo:hover{
+    border: 1px solid var(--detailsColor);
+}

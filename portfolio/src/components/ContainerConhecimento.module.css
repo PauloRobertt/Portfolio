@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+    flex-direction: column;
+    background-color: var(--secondaryColor);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 2px solid var(--detailsColor);
+    width: 130px;
+    height: 140px;
+}
+
+.container:hover:nth-child(1) {
+    --detailsColor: #E44D26
+}
+
+.container:hover:nth-child(2) {
+    --detailsColor: #264DE4
+}
+
+.container:hover:nth-child(3) {
+    --detailsColor: #F7DF1E
+}
+
+.container:hover:nth-child(4) {
+    --detailsColor: #339933
+}
+
+.container:hover:nth-child(5) {
+    --detailsColor: #61DAFB
+}
+
+.container:hover:nth-child(6) {
+    --detailsColor: #F05032	
+}
+
+.container:hover:nth-child(7) {
+    --detailsColor: #181717	
+}
+
+.container:hover:nth-child(8) {
+    --detailsColor: #F05032	
+}
+
+.container:hover:nth-child(9) {
+    --detailsColor: #336791		
+}
+
+.container:hover:nth-child(10){
+    --detailsColor: #00758F		
+}
+
+.container:hover:nth-child(11) {
+    --detailsColor: #007396		
+}

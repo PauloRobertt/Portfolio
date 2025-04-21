@@ -1,0 +1,33 @@
+.sectionConhecimento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding: var(--paddingSections);
+    color: var(--textColor);
+    background-color: var(--primaryColor);
+}
+
+.tittleConhecimento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sectionConhecimento h2{
+    font-size: var(--sizeTittle);
+    color: var(--detailsColor)
+}
+
+.sectionConhecimento h3{
+    font-size: var(--sizeSubTittle);
+}
+
+.conhecimentos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 51%;
+    gap: 2em;
+}
