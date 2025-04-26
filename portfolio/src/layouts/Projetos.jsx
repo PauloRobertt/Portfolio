@@ -5,7 +5,7 @@ import { objImagens } from '../assets/OrganizarImages.js';
 
 export default function Projetos() {
     return (
-        <section className={styles.sectionProjetos}>
+        <section id='projetos' className={styles.sectionProjetos}>
             <div className={styles.tittleProjetos}>
                 <h2>Projetos</h2>
                 <h3>Confira meus projetos</h3>

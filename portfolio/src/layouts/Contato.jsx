@@ -9,7 +9,7 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Contato() {
     return (
-        <section className={styles.sectionContato}>
+        <section id='contato' className={styles.sectionContato}>
             <div className={styles.tittleContato}>
                 <h2>Contato</h2>
                 <h3>Entre em contato comigo!</h3>

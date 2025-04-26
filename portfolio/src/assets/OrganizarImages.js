@@ -5,8 +5,10 @@ import bannerRestaurante from './img/imgProjetos/banner-Restaurante.jpeg';
 import bannerControleEstoque from './img/imgProjetos/controle-estoque.png';
 import bannerAPI from './img/imgProjetos/bannerAPI.png';
 import FundoDesenvolvimento from './img/imgProjetos/FundoDesenvolvimento.jpg';
+import imgAboutMe from './img/laptop-com-icone-de-codigo.avif';
 
 export const objImagens = {
+    aboutMe: imgAboutMe,
     projectAPi: bannerAPI,
     projectCosts: bannerCosts,
     projectSorveteria: bannerSorveteria,
