@@ -1,0 +1,42 @@
+.CardContato {
+    display: flex;
+}
+
+.CardContato figure {
+    padding: .5em 1em;
+    background-color: var(--secondaryColor);
+    border-radius: 100px;
+}
+
+.CardContato a,
+.CardContato figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.CardContato a {
+    font-size: var(--sizeParagrafo);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    color: var(--textColor);
+    text-decoration: none;
+}
+
+.CardContato:hover:nth-child(1) {
+    --textColor: #EA4335
+}
+
+.CardContato:hover:nth-child(2) {
+    --textColor: #25D366
+}
+
+.CardContato:hover:nth-child(3) {
+    --textColor: #0A66C2
+}
+
+.CardContato:hover:nth-child(4) {
+    --textColor: #6e5494
+}

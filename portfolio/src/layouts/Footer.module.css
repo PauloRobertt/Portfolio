@@ -1,0 +1,16 @@
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3em;
+    color: var(--textColor);
+    font-size: var(--sizeParagrafo);
+    background-color: var(--primaryColor);
+    width: 100%;
+    height: 8vh;
+    border-top: 2px solid var(--detailsColor);
+}
+
+.spanFooter{
+    color: var(--detailsColor);
+}

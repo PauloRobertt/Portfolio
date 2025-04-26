@@ -1,0 +1,31 @@
+.sectionContato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding: var(--paddingSections);
+    color: var(--textColor);
+    background-color: var(--primaryColor);
+}
+
+.tittleContato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sectionContato h2{
+    font-size: var(--sizeTittle);
+    color: var(--detailsColor)
+}
+
+.sectionContato h3{
+    font-size: var(--sizeSubTittle);
+}
+
+.containerContato{
+    display: flex;
+    gap: 4em;
+}
