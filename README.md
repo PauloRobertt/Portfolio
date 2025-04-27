@@ -1,12 +1,12 @@
- # PORTFOLIO PESSOA
-Portfolio pessoal
+# 🖥 **Portfolio Pessoal**
 
- ## 🔨 Tecnologias Utilizadas
-- Html
-- Css
-- JavaScript
+Este é meu **portfolio** pessoal, desenvolvido com **ReactJS**, **CSS** e **JavaScript**. onde apresento meus conhecimentos, projetos e informações para contato.
 
-## 🖥 Acesso
-Você pode acessar o portfolio através deste link.
+## 🔨 **Tecnologias Utilizadas**
+ - ReactJS
+ - React Router
+ - ReactIcons
 
-<a href="https://paulorobertt.github.io/Portfolio/" target="_blank"> 💻Link para acesso <a/>
+## 🌐 **Acesso ao Portfolio**
+Você pode acessar o portfolio através do link abaixo:  
+<a href="https://paulorobertdev.vercel.app" target="_blank"> 💻Link para acesso </a>
