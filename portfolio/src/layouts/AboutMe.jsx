@@ -14,7 +14,7 @@ export default function AboutMe() {
                 <p>
                     Sou formado em Análise e Desenvolvimento de Sistemas, com foco em desenvolvimento web e tecnologia. Tenho experiência em projetos que demandam planejamento estratégico, organização e raciocínio lógico. Além disso, possuo sólidos conhecimentos em informática e no pacote Office (Word, Excel e PowerPoint). Sou uma pessoa comprometida, adaptável e estou sempre em busca de evolução contínua, tanto pessoal quanto profissionalmente.
                 </p>
-                <a className={styles.buttonCurriculo} href='../../../Currículo.pdf' download='Currículo.pdf'>
+                <a className={styles.buttonCurriculo} href='../../public/Curriculo.pdf' download='Curriculo.pdf'>
                     <HiDownload size={24} color={"#CCD6F6"} /> Baixar Currículo
                 </a>
             </div>
