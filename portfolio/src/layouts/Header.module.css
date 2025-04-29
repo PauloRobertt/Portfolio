@@ -1,4 +1,4 @@
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,12 +12,16 @@ header{
     top: 0;
 }
 
-.spanHeader{
+.menuMobile {
+    display: none;
+}
+
+.spanHeader {
     color: var(--detailsColor);
     font-size: 1.6em;
 }
 
-.links{
+.links {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -25,7 +29,7 @@ header{
     list-style: none;
 }
 
-header .links a{
+header .links a {
     margin-left: 20px;
     text-decoration: none;
     color: var(--textColor);
@@ -33,24 +37,75 @@ header .links a{
     flex-direction: column;
 }
 
-header .links a::after{
+header .links a::after {
     content: "";
     background-color: var(--detailsColor);
     width: 0%;
     height: 2px;
 }
 
-header .links a:hover::after{
+header .links a:hover::after {
     animation-name: AnimHeader;
     animation-duration: 500ms;
     width: 100%;
 }
 
 @keyframes AnimHeader {
-    from{
+    from {
         width: 0%;
     }
-    to{
+
+    to {
         width: 100%;
     }
+}
+
+
+/*Media Queries*/
+
+/* Mobile First (até 480px) */
+@media (max-width: 480px) {
+    header {
+        justify-content: space-between;
+        padding: 1em;
+        gap: 0;
+        width: 100%;
+    }
+
+    .spanHeader {
+        font-size: 1.3em;
+    }
+
+    .desktops {
+        display: none;
+    }
+
+    .menuMobile {
+        display: block;
+    }
+}
+
+/* Smartphones grandes (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+    /* Estilos para celulares maiores */
+}
+
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Estilos para tablets */
+}
+
+/* Laptops (1025px - 1280px) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /* Estilos para laptops */
+}
+
+/* Desktops padrão (1281px - 1440px) */
+@media (min-width: 1281px) and (max-width: 1440px) {
+    /* Estilos para desktops */
+}
+
+/* Telas muito grandes (1441px +) */
+@media (min-width: 1441px) {
+    /* Estilos para telas gigantes */
 }

@@ -1,5 +1,5 @@
 import styles from './Projetos.module.css';
-import ContainerProjetos from '../components/ContainerProjetos.jsx';
+import CardProjetos from '../components/CardProjetos.jsx';
 
 import { objImagens } from '../assets/OrganizarImages.js';
 
@@ -11,7 +11,7 @@ export default function Projetos() {
                 <h3>Confira meus projetos</h3>
             </div>
             <div className={styles.projetos}>
-                <ContainerProjetos
+                <CardProjetos
                     imgProject={objImagens.projectCosts}
 
                     descriptionImg='Página Home do projeto costs'
@@ -26,7 +26,7 @@ export default function Projetos() {
                     tecnologias={['ReactJS', 'React-Router-Dom', 'CSS-Modules', 'Spring Boot', 'Maven', 'JPA', 'PostgreSQL']}
                 />
 
-                <ContainerProjetos
+                <CardProjetos
                     imgProject={objImagens.fundoDesenvolvimento}
 
                     descriptionImg='Página em desenvolvimento'
@@ -41,7 +41,7 @@ export default function Projetos() {
                     tecnologias={['NodeJS', 'Express.js', 'Sequelize', 'ReactJS', 'Styled-Components', 'React-Router-Dom', 'PostgreSQL']}
                 />
 
-                <ContainerProjetos
+                <CardProjetos
                     imgProject={objImagens.projectAPi}
 
                     descriptionImg='API'
@@ -56,7 +56,7 @@ export default function Projetos() {
                     tecnologias={['Spring Boot', 'Spring Security', 'JWT', 'BCrypt', 'Swagger', 'QRCode', 'iText', 'PostgreSQL']}
                 />
 
-                <ContainerProjetos
+                <CardProjetos
                     imgProject={objImagens.projectControleEstoque}
 
                     descriptionImg='banner controle de Estoque'
@@ -71,7 +71,7 @@ export default function Projetos() {
                     tecnologias={['Java', 'POO', 'Manipulação de Arquivos .txt']}
                 />
 
-                <ContainerProjetos
+                <CardProjetos
                     imgProject={objImagens.projectRestaurante}
 
                     descriptionImg='Banner do projeto Restaurante'
@@ -86,7 +86,7 @@ export default function Projetos() {
                     tecnologias={['HTML5', 'CSS3', 'JavaScript', 'ReactJS']}
                 />
 
-                <ContainerProjetos
+                <CardProjetos
                     imgProject={objImagens.projectAgencia}
 
                     descriptionImg='Banner do projeto Agencia de Design'

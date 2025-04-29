@@ -51,3 +51,29 @@
 .buttonCurriculo:hover{
     border: 2px solid var(--detailsColor);
 }
+
+/*Media Queries*/
+
+/* Mobile First (até 480px) */
+@media (max-width: 480px) {
+    .aboutMe{
+        padding: 4em 1em;
+        flex-direction: column-reverse;
+    }
+
+    .textAboutme{
+        width: 100%; 
+    }
+
+    .textAboutme p{
+        width: 100%;
+    }
+
+    .imgAboutme{
+        border-radius: 5px;
+        background-position: center;
+        background-size: cover;
+        min-width: 90vw;
+        height: 30vh;
+    }
+}

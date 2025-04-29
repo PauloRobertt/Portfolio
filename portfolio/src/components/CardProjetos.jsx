@@ -1,4 +1,4 @@
-import styles from './ContainerProjetos.module.css';
+import styles from './CardProjetos.module.css';
 
 import { MdMonitor } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";

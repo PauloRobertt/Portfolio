@@ -16,16 +16,34 @@
     flex-direction: column;
 }
 
-.sectionContato h2{
+.tittleContato h2{
     font-size: var(--sizeTittle);
     color: var(--detailsColor)
 }
 
-.sectionContato h3{
+.tittleContato h3{
     font-size: var(--sizeSubTittle);
 }
 
 .containerContato{
     display: flex;
     gap: 4em;
+}
+
+/* Mobile First (até 480px) */
+@media (max-width: 480px) {
+    .sectionContato {
+        padding: 0;
+        width: 100%;
+    }
+
+    .tittleContato{
+        font-size: 12px;
+    }
+
+    .containerContato{
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }

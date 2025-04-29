@@ -1,0 +1,123 @@
+.containerProject {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 348px;
+}
+
+.imgProject img {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.imgProject {
+    border-right: 2px solid var(--detailsColor);
+    height: 100%;
+    width: 45%;
+}
+
+.conteudoProjeto {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em 2em;
+    color: var(--textColor);
+    background-color: var(--secondaryColor);
+}
+
+.conteudoProjeto h4 {
+    font-size: 1.7em;
+}
+
+.conteudoProjeto p {
+    font-size: var(--sizeParagrafo);
+}
+
+.topoProjeto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tittle {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.redirecionamento {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 1.5em;
+}
+
+.containerTecnologias {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.tecnologia {
+    padding: .5em;
+    border: 1px solid var(--detailsColor);
+    border-radius: 10px;
+    background-color: var(--primaryColor);
+}
+
+/*Media Queries*/
+
+/* Mobile First (até 480px) */
+@media (max-width: 480px) {
+    .containerProject{        
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .imgProject, .conteudoProjeto{
+        width: 100%;
+    }
+
+    .imgProject img {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom: 2px solid var(--detailsColor);
+        border-right: 0;
+    }
+    
+    .conteudoProjeto{
+        gap: 1em;
+        justify-content: space-between;
+        padding: 1em;
+    }
+
+    .containerTecnologias{
+        height: 100%;
+    }
+
+    .topoProjeto{
+        text-align: center;
+        flex-direction: column;
+        gap: .5em;
+    }
+
+    .tittle{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .redirecionamento{
+        width: 100%;
+        justify-content: space-around;
+    }
+}
