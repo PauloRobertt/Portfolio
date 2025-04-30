@@ -1,7 +1,7 @@
 .aboutMe {
     display: flex;
     gap: 2em;
-    margin-top: 5em;
+    margin-top: 6em;
     padding: 0em 7em;
     color: var(--textColor);
     background-color: var(--primaryColor);
@@ -33,7 +33,7 @@
 }
 
 
-.buttonCurriculo{
+.buttonCurriculo {
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -49,7 +49,7 @@
     cursor: pointer;
 }
 
-.buttonCurriculo:hover{
+.buttonCurriculo:hover {
     border: 2px solid var(--detailsColor);
 }
 
@@ -57,24 +57,48 @@
 
 /* Mobile First (até 480px) */
 @media (max-width: 767px) {
-    .aboutMe{
+    .aboutMe {
         padding: 0em 1em;
         flex-direction: column-reverse;
     }
 
-    .textAboutme{
-        width: 100%; 
-    }
-
-    .textAboutme p{
+    .textAboutme {
         width: 100%;
     }
 
-    .imgAboutme{
+    .textAboutme p {
+        width: 100%;
+    }
+
+    .imgAboutme {
         border-radius: 5px;
         background-position: center;
         background-size: cover;
         width: 100%;
         height: 30vh;
+    }
+}
+
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .aboutMe {
+        padding: 0em 1em;
+        flex-direction: column-reverse;
+    }
+
+    .textAboutme {
+        width: 100%;
+    }
+
+    .textAboutme p {
+        width: 100%;
+    }
+
+    .imgAboutme {
+        border-radius: 5px;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 50vh;
     }
 }

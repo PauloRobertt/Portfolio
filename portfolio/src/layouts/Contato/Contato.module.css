@@ -1,49 +1,53 @@
-.sectionContato{
+.sectionContato {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2em;
+    width: 100%;
     color: var(--textColor);
     background-color: var(--primaryColor);
 }
 
-.tittleContato{
+.tittleContato {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.tittleContato h2{
+.tittleContato h2 {
     font-size: var(--sizeTittle);
     color: var(--detailsColor)
 }
 
-.tittleContato h3{
+.tittleContato h3 {
     font-size: var(--sizeSubTittle);
 }
 
-.containerContato{
+.containerContato {
     display: flex;
     gap: 4em;
 }
 
 /* Mobile First (até 767px) */
 @media (max-width: 767px) {
-    .sectionContato {
-        padding: 0;
-        width: 100%;
-    }
 
-    .tittleContato{
+    .tittleContato {
         font-size: 12px;
     }
 
-    .containerContato{
+    .containerContato {
         justify-content: center;
         flex-wrap: wrap;
         width: 80%;
         gap: 3em;
+    }
+}
+
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .tittleContato {
+        font-size: 18px;
     }
 }

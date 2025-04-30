@@ -14,3 +14,17 @@ footer{
 .spanFooter{
     color: var(--detailsColor);
 }
+
+/* Mobile First (até 480px) */
+@media (max-width: 767px) {
+    footer{
+        font-size: 1em;
+    }
+}
+
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    footer{
+        font-size: 1.5em;
+    }
+}

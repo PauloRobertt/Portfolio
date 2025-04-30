@@ -53,3 +53,20 @@
         opacity: 0;
     }
 }
+
+/*Media Queries*/
+
+/* Mobile First (até 767px) */
+@media (max-width: 767px) {
+    .menuIcon{
+        font-size: 30px;
+    }
+}
+
+
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .menuIcon{
+        font-size: 40px;
+    }
+}

@@ -15,15 +15,15 @@ export default function ContainerProjetos({ imgProject, descriptionImg, tittlePr
             <div className={styles.conteudoProjeto}>
                 <div className={styles.topoProjeto}>
                     <div className={styles.tittle}>
-                        <MdMonitor size={30} color='var(--textColor)' />
+                        <MdMonitor className={styles.iconCardProject} color='var(--textColor)' />
                         <h4>{tittleProject}</h4>
                     </div>
                     <div className={styles.redirecionamento}>
                         <a href={linkSite} target="_blank" rel="noopener noreferrer">
-                            <AiOutlineExport cursor='pointer' size={30} color='var(--textColor)' />
+                            <AiOutlineExport cursor='pointer' className={styles.iconCardProject} color='var(--textColor)' />
                         </a>
                         <a href={linkGitHub} target="_blank" rel="noopener noreferrer">
-                            <FaGithub cursor='pointer' size={30} color='var(--textColor)' />
+                            <FaGithub cursor='pointer' className={styles.iconCardProject} color='var(--textColor)' />
                         </a>
                     </div>
                 </div>

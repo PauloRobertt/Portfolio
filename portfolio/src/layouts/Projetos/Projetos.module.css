@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     gap: 2em;
+    width: 100%;
     color: var(--textColor);
     background-color: var(--primaryColor);
 }
@@ -46,7 +47,17 @@
     }
 
     .projetos {
-        width: 100%;
+        width: 90%;
         flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .tittleProjetos {
+        font-size: 18px;
+    }
+
+    .projetos {
+        width: 90%;
     }
 }

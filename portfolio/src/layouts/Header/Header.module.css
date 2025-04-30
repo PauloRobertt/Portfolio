@@ -63,13 +63,16 @@ header .links a:hover::after {
 
 /*Media Queries*/
 
-/* Mobile First (até 480px) */
+/* Mobile First (até 767px) */
 @media (max-width: 767px) {
     header {
         justify-content: space-between;
         padding: 1em;
         gap: 0;
-        width: 100%;
+    }
+
+    .menuIcon{
+        font-size: 30px;
     }
 
     .spanHeader {
@@ -85,14 +88,30 @@ header .links a:hover::after {
     }
 }
 
-/* Smartphones grandes (481px - 767px) */
-@media (min-width: 481px) and (max-width: 767px) {
-    /* Estilos para celulares maiores */
-}
 
 /* Tablets (768px - 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
-    /* Estilos para tablets */
+    header {
+        justify-content: space-between;
+        padding: 1em;
+        gap: 0;
+    }
+    
+    .menuIcon{
+        font-size: 40px;
+    }
+
+    .spanHeader {
+        font-size: 1.7em;
+    }
+
+    .desktops {
+        display: none;
+    }
+
+    .menuMobile {
+        display: block;
+    }
 }
 
 /* Laptops (1025px - 1280px) */

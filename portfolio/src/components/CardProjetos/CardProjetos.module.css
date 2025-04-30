@@ -6,6 +6,10 @@
     height: 348px;
 }
 
+.iconCardProject {
+    font-size: 30px;
+}
+
 .imgProject img {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -78,13 +82,13 @@
 
 /* Mobile First (até 767px) */
 @media (max-width: 767px) {
-    .containerProject{
-        padding: 0 1em;
+    .containerProject {
         flex-direction: column;
         height: 100%;
     }
 
-    .imgProject, .conteudoProjeto{
+    .imgProject,
+    .conteudoProjeto {
         width: 100%;
     }
 
@@ -95,14 +99,14 @@
         border-bottom: 2px solid var(--detailsColor);
     }
 
-    .imgProject{
+    .imgProject {
         width: 100%;
         height: 100%;
         max-height: 80vh;
         border-right: 0;
     }
-    
-    .conteudoProjeto{
+
+    .conteudoProjeto {
         gap: 1em;
         justify-content: space-between;
         padding: 1em;
@@ -110,23 +114,83 @@
         border-bottom-right-radius: 20px;
     }
 
-    .containerTecnologias{
+    .containerTecnologias {
         height: 100%;
     }
 
-    .topoProjeto{
+    .topoProjeto {
         text-align: center;
         flex-direction: column;
         gap: .5em;
     }
 
-    .tittle{
+    .tittle {
         flex-direction: column;
         gap: 0;
     }
 
-    .redirecionamento{
+    .redirecionamento {
         width: 100%;
         justify-content: space-around;
     }
+}
+
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .containerProject {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .imgProject,
+    .conteudoProjeto {
+        width: 100%;
+    }
+
+    .imgProject img {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom: 2px solid var(--detailsColor);
+    }
+
+    .imgProject {
+        width: 100%;
+        height: 100%;
+        border-right: 0;
+    }
+
+    .conteudoProjeto {
+        gap: 1em;
+        justify-content: space-between;
+        padding: 1em;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .containerTecnologias {
+        height: 100%;
+    }
+
+    .topoProjeto {
+        text-align: center;
+        flex-direction: column;
+        gap: .5em;
+    }
+
+    .tittle {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .redirecionamento {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+
+    .iconCardProject {
+        font-size: 40px;
+    }
+
 }

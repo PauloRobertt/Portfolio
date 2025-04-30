@@ -6,8 +6,8 @@ export default function Menu({ toggleFunction, statusMenu }) {
     return (
         <div className={`${statusMenu ? styles.statusAtivo : styles.statusInativo} ${styles.menu}`}>
             <IoMdClose
+                className={styles.menuIcon}
                 onClick={toggleFunction}
-                size={30}
                 color='var(--textColor)'
             />
             <nav className={styles.mobile}>

@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     gap: 2em;
+    width: 100%;
     color: var(--textColor);
     background-color: var(--primaryColor);
 }
@@ -35,16 +36,22 @@
 
 /* Mobile First (até 480px) */
 @media (max-width: 767px) {
-    .sectionConhecimento {
-        padding: 0;
-        width: 100%;
-    }
-
     .tittleConhecimento{
         font-size: 12px;
     }
 
     .conhecimentos{
-        width: 100%;
+        width: 92%;
+    }
+}
+
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .tittleConhecimento{
+        font-size: 18px;
+    }
+
+    .conhecimentos{
+        width: 75%;
     }
 }

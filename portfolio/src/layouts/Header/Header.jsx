@@ -29,8 +29,8 @@ export default function Header() {
             </div>
             <div className={styles.menuMobile}>
                 <IoMenu
+                    className={styles.menuIcon}
                     onClick={toggleMenu}
-                    size={30}
                     color='var(--textColor)'
                 />
                 <Menu
