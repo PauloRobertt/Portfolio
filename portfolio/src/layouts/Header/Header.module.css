@@ -64,7 +64,7 @@ header .links a:hover::after {
 /*Media Queries*/
 
 /* Mobile First (até 480px) */
-@media (max-width: 480px) {
+@media (max-width: 767px) {
     header {
         justify-content: space-between;
         padding: 1em;

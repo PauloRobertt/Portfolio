@@ -1,7 +1,7 @@
 import styles from './Projetos.module.css';
-import CardProjetos from '../components/CardProjetos.jsx';
+import CardProjetos from '../../components/CardProjetos/CardProjetos.jsx';
 
-import { objImagens } from '../assets/OrganizarImages.js';
+import { objImagens } from '../../assets/OrganizarImages.js';
 
 export default function Projetos() {
     return (

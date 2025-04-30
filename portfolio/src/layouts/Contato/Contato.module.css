@@ -4,7 +4,6 @@
     justify-content: center;
     align-items: center;
     gap: 2em;
-    padding: var(--paddingSections);
     color: var(--textColor);
     background-color: var(--primaryColor);
 }
@@ -30,8 +29,8 @@
     gap: 4em;
 }
 
-/* Mobile First (até 480px) */
-@media (max-width: 480px) {
+/* Mobile First (até 767px) */
+@media (max-width: 767px) {
     .sectionContato {
         padding: 0;
         width: 100%;
@@ -42,8 +41,9 @@
     }
 
     .containerContato{
-        width: 100%;
         justify-content: center;
         flex-wrap: wrap;
+        width: 80%;
+        gap: 3em;
     }
 }

@@ -76,9 +76,10 @@
 
 /*Media Queries*/
 
-/* Mobile First (até 480px) */
-@media (max-width: 480px) {
-    .containerProject{        
+/* Mobile First (até 767px) */
+@media (max-width: 767px) {
+    .containerProject{
+        padding: 0 1em;
         flex-direction: column;
         height: 100%;
     }
@@ -92,6 +93,12 @@
         border-top-right-radius: 20px;
         border-bottom-left-radius: 0;
         border-bottom: 2px solid var(--detailsColor);
+    }
+
+    .imgProject{
+        width: 100%;
+        height: 100%;
+        max-height: 80vh;
         border-right: 0;
     }
     
@@ -99,6 +106,8 @@
         gap: 1em;
         justify-content: space-between;
         padding: 1em;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
 
     .containerTecnologias{

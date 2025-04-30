@@ -4,7 +4,6 @@
     justify-content: center;
     align-items: center;
     gap: 2em;
-    padding: var(--paddingSections);
     color: var(--textColor);
     background-color: var(--primaryColor);
 }
@@ -35,8 +34,8 @@
 
 /*Media Queries*/
 
-/* Mobile First (até 480px) */
-@media (max-width: 480px) {
+/* Mobile First (até 767px) */
+@media (max-width: 767px) {
     .sectionProjetos {
         padding: 0;
         width: 100%;

@@ -1,5 +1,5 @@
 import styles from './Conhecimento.module.css'
-import ContainerConhecimento from '../components/ContainerConhecimento.jsx';
+import ContainerConhecimento from '../../components/CardConhecimento/ContainerConhecimento.jsx';
 
 //Icons
 import { FaHtml5 } from "react-icons/fa";

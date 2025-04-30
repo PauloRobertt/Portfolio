@@ -1,6 +1,6 @@
 import styles from './Contato.module.css';
 
-import CardContato from '../components/CardContato.jsx';
+import CardContato from '../../components/CardContato/CardContato.jsx';
 
 import { MdOutlineEmail } from "react-icons/md";
 import { MdOutlineLocalPhone } from "react-icons/md";

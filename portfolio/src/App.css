@@ -3,7 +3,6 @@
     --secondaryColor: #0F2443;
     --textColor: #CCD6F6;
     --detailsColor: #64FFDA;
-    --paddingSections: 2em 3em;
     --sizeTittle: 2.3em;
     --sizeSubTittle: 1.8em;
     --sizeParagrafo: 20px;
@@ -14,4 +13,11 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+}
+
+.containerApp{
+    background-color: var(--primaryColor);
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 }

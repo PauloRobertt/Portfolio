@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import Menu from './Menu.jsx';
+import Menu from '../Menu/Menu.jsx';
 import styles from './Header.module.css';
 
 import { IoMenu } from "react-icons/io5";

@@ -1,6 +1,6 @@
 import styles from './AboutMe.module.css';
 
-import { objImagens } from '../assets/OrganizarImages.js';
+import { objImagens } from '../../assets/OrganizarImages.js';
 import { HiDownload } from "react-icons/hi";
 
 export default function AboutMe() {
